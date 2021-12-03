@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+number guessing
+</head>
+<body>
+	<script>
+		var rand=Math.floor((Math.random()*10+1));
+		var guessing=window.prompt("guess a number from 1 to 10");
+		var answer=false;
+		while(!answer){
+			if(guessing==rand){
+				answer=true;
+			}
+			else if (guessing<rand){
+				guessing=window.prompt("higher!");
+			}
+			else if(guessing>rand){
+				guessing=window.prompt("lower");
+			}
+		}
+		alert('you are right!');
+	</script>
+<h1>congratulations!</h1>
+</body>
+</html>
